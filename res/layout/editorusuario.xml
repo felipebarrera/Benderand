@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TableRow
+			android:id="@+id/trid_usuario"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvid_usuario"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvid_usuario"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etid_usuario"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trtipo_usuario"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvtipo_usuario"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvtipo_usuario"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/ettipo_usuario"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trnombre_usuario"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvnombre_usuario"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvnombre_usuario"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etnombre_usuario"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trclave"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvclave"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvclave"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etclave"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trcliente_id_cliente"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvcliente_id_cliente"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvcliente_id_cliente"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spcliente_id_cliente"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/trcliente_empresa_id_cliente_empresa"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvcliente_empresa_id_cliente_empresa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvcliente_empresa_id_cliente_empresa"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spcliente_empresa_id_cliente_empresa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+    </TableLayout>
+</ScrollView>

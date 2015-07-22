@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView android:id="@+id/formaddgasto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android" 
+    	android:layout_height="fill_parent" 
+    	android:layout_width="fill_parent" 
+    	android:id="@+id/linearLayout1" android:orientation="vertical">
+    	<TextView android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:text="Editor de Gasto" 
+    	android:textAppearance="?android:attr/textAppearanceMedium" 
+    	android:id="@+id/textView1"></TextView>
+    	<TableLayout 
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_height="fill_parent" 
+		    android:layout_width="fill_parent"
+		    android:background="#000044">
+        <TableRow> 
+        	<TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Id gasto" android:layout_height="wrap_content" 
+		        android:id="@+id/id_gastoview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editid_gasto" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+
+ 
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Fecha Gasto" android:layout_height="wrap_content" 
+		        android:id="@+id/fecha_gastoview" android:layout_width="wrap_content">
+		    </TextView>
+
+	        <DatePicker
+	            android:id="@+id/editfecha_gasto"
+	            android:layout_width="wrap_content"
+		        android:layout_weight="1" 
+	            android:layout_height="wrap_content" />
+        </TableRow> 
+        <TableRow>
+            <TextView
+                android:id="@+id/id_usuarioview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editid_usuario" 
+		        android:layout_width="wrap_content">
+	            <requestFocus></requestFocus>
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Monto Gasto" android:layout_height="wrap_content" 
+		        android:id="@+id/monto_gastoview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editmonto_gasto" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Nombre Gasto" android:layout_height="wrap_content" 
+		        android:id="@+id/nombre_gastoview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editnombre_gasto" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow>
+    	</TableLayout>
+    </LinearLayout>
+    </ScrollView>
+<!-- From: file:/D:/Trabajo/android/endroidStudio/proyectos/benderand/res/layout/gastoeditor.xml -->

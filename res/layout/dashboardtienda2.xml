@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:id="@+id/linearLayout2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp" >
+	    <TextView
+	        android:id="@+id/txttotal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Total: "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtvalortotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+	</LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewCarro"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.09" >
+        </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/btnCobrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnCobrar" />
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnLimpiar" />
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAgregar" />
+    </LinearLayout>
+</LinearLayout>

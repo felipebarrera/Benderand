@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TableRow
+			android:id="@+id/trid_factura"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvid_factura"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvid_factura"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etid_factura"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trrol_factura"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvrol_factura"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvrol_factura"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etrol_factura"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trdia_factura"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvdia_factura"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvdia_factura"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etdia_factura"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trmes_factura"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvmes_factura"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvmes_factura"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etmes_factura"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trano_factura"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvano_factura"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvano_factura"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etano_factura"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trempresa_id_empresa"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvempresa_id_empresa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvempresa_id_empresa"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spempresa_id_empresa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/trempresa_id_empresa1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvempresa_id_empresa1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvempresa_id_empresa1"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spempresa_id_empresa1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+    </TableLayout>
+</ScrollView>

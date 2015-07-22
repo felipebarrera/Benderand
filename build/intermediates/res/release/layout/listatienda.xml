@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:labelFor="@+id/etfiltroProductostienda"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="@string/lblbuscar" />
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_weight="3"
+			android:id="@+id/etfiltroProductostienda"
+			android:inputType="textFilter"
+			android:layout_width="0dp">
+			<requestFocus></requestFocus>
+		</EditText>
+
+		<Button
+			android:id="@+id/btnscan"
+			style="?android:attr/buttonStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/btnscan" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout3"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:baselineAligned="false"
+		android:layout_weight="2">
+
+		<ListView
+			android:id="@+id/listaproductos"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:dividerHeight="2dp">
+
+		</ListView>
+
+	</LinearLayout>
+</LinearLayout><!-- From: file:/D:/Trabajo/android/endroidStudio/proyectos/benderand/res/layout/listatienda.xml -->

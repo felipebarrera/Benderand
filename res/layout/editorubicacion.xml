@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TableRow
+			android:id="@+id/trid_ubicacion"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvid_ubicacion"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvid_ubicacion"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etid_ubicacion"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trnumero_ubicacion"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvnumero_ubicacion"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvnumero_ubicacion"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etnumero_ubicacion"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trnumero_interior"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvnumero_interior"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvnumero_interior"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etnumero_interior"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trtelefono_ubicacion"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvtelefono_ubicacion"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvtelefono_ubicacion"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/ettelefono_ubicacion"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trdefault_ubicacion"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvdefault_ubicacion"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvdefault_ubicacion"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etdefault_ubicacion"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trcalle_id_calle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvcalle_id_calle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvcalle_id_calle"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spcalle_id_calle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/trempresa_id_empresa"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvempresa_id_empresa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvempresa_id_empresa"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spempresa_id_empresa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/trusuario_id_usuario"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvusuario_id_usuario"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvusuario_id_usuario"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spusuario_id_usuario"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+    </TableLayout>
+</ScrollView>

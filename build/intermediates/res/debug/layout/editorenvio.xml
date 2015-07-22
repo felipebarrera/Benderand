@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TableRow
+			android:id="@+id/trid_envio"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvid_envio"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvid_envio"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etid_envio"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trdireccion_alternativa"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvdireccion_alternativa"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvdireccion_alternativa"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etdireccion_alternativa"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trfecha_entrega"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvfecha_entrega"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvfecha_entrega"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etfecha_entrega"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trhora_entrega"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvhora_entrega"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvhora_entrega"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/ethora_entrega"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trventa_id_venta"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvventa_id_venta"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvventa_id_venta"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<Spinner
+					android:id="@+id/spventa_id_venta"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+		</TableRow>
+		<TableRow
+			android:id="@+id/trenviado"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvenviado"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvenviado"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				
+				<EditText
+					android:id="@+id/etenviado"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+    </TableLayout>
+</ScrollView><!-- From: file:/D:/Trabajo/android/endroidStudio/proyectos/benderand/res/layout/editorenvio.xml -->

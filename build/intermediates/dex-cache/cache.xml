@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\classes-38140c280dcb56a4e3924987021bb28a7ec4d35d.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\libs\android-support-v7-appcompat.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6044ad7bc085fee37a50e494aff6dd5f3869021e">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\android-support-v7-appcompat-0e4ce900fa63756813a84d14a6333077a7fb862f.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\classes-05625d9f6bcb21891c1c60c58a1f393d50d29108.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-2f3f5191d7508e207726c2372bb6d8d058262a94.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="605c447c20ca216b5556af9f215af5d4bba1b117">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\android-support-v4-d46ce5a4348c4e08275dd59ee022139c55e9a70e.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-25054b0ab6c8c0fec3482b0ff45bb2eb357a3712.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\libs\holographlibrary.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="363d1bcfa38239d8aad8396671d14b142ce0244b">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\holographlibrary-c29187ee2ad5cc4fa555bfa3c8237ad98fc6ce65.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\libs\core-3.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\core-3.2.0-9907d4cde6d1e481a8b38d3f64e4ff418c8037c3.jar" />
+    </item>
+    <item
+        jar="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\exploded-aar\benderand\HoloGraphLibrary\unspecified\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="184e00c6d79ae59379de9bfa32507c12c809b6b8">
+        <dex dex="D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\classes-cef4f3b4eb7914eb504dcd884b0e0ad6e9ab9985.jar" />
+    </item>
+
+</items>

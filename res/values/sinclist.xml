@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sinclist">
+        <item>producto</item>
+        <item>empresa</item>
+    </string-array>
+</resources>

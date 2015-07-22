@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_column="0">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnVender"
+                android:text="@string/btnVender"
+                style="@style/btntext"  />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnComprar"
+                android:text="@string/btnLogistica"
+                style="@style/btntext"  />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btnAdministracion"
+                android:text="Administracion"
+                style="@style/btntext"  />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spPeriodo"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.echo.holographlibrary.BarGraph
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:id="@+id/graph"/>
+    </TableRow>
+    </TableLayout>
+</LinearLayout><!-- From: file:/D:/Trabajo/android/endroidStudio/proyectos/benderand/res/layout/dashboard.xml -->

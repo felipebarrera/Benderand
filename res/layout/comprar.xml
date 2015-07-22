@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lblBruto"
+            android:id="@+id/lblcbruto"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lblIva"
+            android:id="@+id/lblcimpuesto"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/lblctotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblTotal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+            android:layout_columnWeight="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtcbruto"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtcimpuesto"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/txtcvalortotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+            android:layout_columnWeight="1" />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/listViewcCarro"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btncPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pagar"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/btncLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/btncAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

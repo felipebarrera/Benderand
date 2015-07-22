@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView android:id="@+id/formaddprod"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android" 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+    	android:id="@+id/linearLayout1" android:orientation="vertical">
+    	<TextView android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:text="Editor de Usuario" 
+    	android:textAppearance="?android:attr/textAppearanceMedium" 
+    	android:id="@+id/textView1"></TextView>
+    	<TableLayout 
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_height="fill_parent" 
+		    android:layout_width="fill_parent"
+		    android:background="#000044">
+        <TableRow> 
+        	<TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Id usuario" android:layout_height="wrap_content" 
+		        android:id="@+id/id_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editid_usuariouser" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+
+ 
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Cliente" android:layout_height="wrap_content" 
+		        android:id="@+id/cod_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editid_cliente" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/num_serieview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre usuario"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editnom_usuario" 
+		        android:layout_width="wrap_content">
+	            <requestFocus></requestFocus>
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Tipo usuario" android:layout_height="wrap_content" 
+		        android:id="@+id/descrip_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/edittipo_usuario" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Empresa" android:layout_height="wrap_content" 
+		        android:id="@+id/id_subcatview" android:layout_width="wrap_content">
+		    </TextView>
+
+	        <Spinner
+	            android:id="@+id/editid_empre"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Clave" android:layout_height="wrap_content" 
+		        android:id="@+id/nom_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editclave" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+    	</TableLayout>
+    </LinearLayout>
+    </ScrollView>

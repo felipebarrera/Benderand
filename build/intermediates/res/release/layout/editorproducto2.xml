@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TableRow
+			android:id="@+id/tralto_cm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvalto_cm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvalto_cm"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etalto_cm"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="phone">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trancho_cm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvancho_cm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvancho_cm"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etancho_cm"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="phone">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trclase_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvclase_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvclase_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etclase_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trcod_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvcod_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvcodigo_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etcod_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trcontenido"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvcontenido"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvcontenido"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etcontenido"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="phone">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trcont_uni"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvcont_uni"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvcontenido_unidad"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etcont_uni"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trcontenido_unidad_medida_id_contenido_unidad_medida"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvcontenido_unidad_medida_id_contenido_unidad_medida"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvcontenido_unidad_medida_id_contenido_unidad_medida"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etcontenido_unidad_medida_id_contenido_unidad_medida"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trdescrip_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvdescrip_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvdescripcion_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etdescrip_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trfabr"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvfabr"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvfabricante"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etfabr"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trfamilia_necesidad_id_familia_necesidad"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvfamilia_necesidad_id_familia_necesidad"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvfamilia_necesidad_id_familia_necesidad"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etfamilia_necesidad_id_familia_necesidad"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trfamilia_producto_id_familia_producto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvfamilia_producto_id_familia_producto"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvfamilia_producto_id_familia_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etfamilia_producto_id_familia_producto"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trfondo_cm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvfondo_cm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvfondo_cm"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etfondo_cm"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="phone">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trformato_producto_id_formato_producto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvformato_producto_id_formato_producto"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvformato_producto_id_formato_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etformato_producto_id_formato_producto"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trhot"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvhot"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvhot"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/ethot"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="phone">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trid_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvid_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvid_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etid_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trlinea_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvlinea_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvlinea_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etlinea_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trmarca_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvmarca_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvmarca_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etmarca_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trmod_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvmod_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvmodelo_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etmod_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trnom_prod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvnom_prod"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvnombre_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etnom_prod"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trnum_serie"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvnum_serie"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvnumero_serie"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etnum_serie"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trpeso_neto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvpeso_neto"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvpeso_neto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etpeso_neto"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="phone">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trSKU"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvSKU"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvSKU"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etSKU"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trsubcategoria_id_subcat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvsubcategoria_id_subcat"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvsubcategoria_id_subcategoria"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etsubcategoria_id_subcat"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="number">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/trtipo_producto_id_tipo_producto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvtipo_producto_id_tipo_producto"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvtipo_producto_id_tipo_producto"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/ettipo_producto_id_tipo_producto"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/truni_min"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+				<TextView
+					android:id="@+id/tvuni_min"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/stringtvunidad_minima"
+					android:textAppearance="?android:attr/textAppearanceSmall" />
+				<EditText
+					android:id="@+id/etuni_min"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ems="10" 
+					android:inputType="text">
+				</EditText>
+		</TableRow>
+    </TableLayout>
+</ScrollView><!-- From: file:/D:/Trabajo/android/endroidStudio/proyectos/benderand/res/layout/editorproducto2.xml -->

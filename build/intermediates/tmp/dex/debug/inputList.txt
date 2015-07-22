@@ -1,0 +1,6 @@
+D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\classes\debug
+D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-25054b0ab6c8c0fec3482b0ff45bb2eb357a3712.jar
+D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\classes-cef4f3b4eb7914eb504dcd884b0e0ad6e9ab9985.jar
+D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-2f3f5191d7508e207726c2372bb6d8d058262a94.jar
+D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\classes-38140c280dcb56a4e3924987021bb28a7ec4d35d.jar
+D:\Trabajo\android\endroidStudio\proyectos\benderand\build\intermediates\pre-dexed\debug\classes-05625d9f6bcb21891c1c60c58a1f393d50d29108.jar

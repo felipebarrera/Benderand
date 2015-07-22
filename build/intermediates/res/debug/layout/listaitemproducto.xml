@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/abc_action_button_min_height_material"
+    android:showDividers="middle"
+    android:divider="?android:dividerHorizontal"
+    android:dividerPadding="8dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showDividers="middle"
+        android:divider="?android:dividerHorizontal"
+        android:dividerPadding="2dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/tcantidadcarro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="5"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/tdescripcioncarro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/txbruto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:text="@string/lblBruto"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tximpuesto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:text="@string/lblimpuesto"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txtotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:text="@string/lblTotal"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/tbruto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/timpuesto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/ttotal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/D:/Trabajo/android/endroidStudio/proyectos/benderand/res/layout/listaitemproducto.xml -->

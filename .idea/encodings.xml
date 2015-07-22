@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/AppMy.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/Comprar.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/Dashboard.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/DashboardAdministracion.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/DashboardDatos.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/DashboardFinanzas.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/DashboardLogistica.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/EgresoList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/IngresoList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/ListaProductos.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/ListaProductosCompra.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/Login.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/ProductoList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/ProductocompraEditor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/Productoeditor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/Registro.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/ServerSelector.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/Vender.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/sync/WebSender.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/util/Constantes.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/util/CurrencyFormatter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/util/CustomAdapterComprar.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cl/webinc/benderand/util/CustomAdaptervender.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cl.webinc.benderand"
+    android:versionCode="4"
+    android:versionName="1.5" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cl.webinc.benderand.Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.ServerSelector"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.Login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cl.webinc.benderand.Registro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.Bodega"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.Usuario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.Dashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.DashboardAdministracion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.crud.EmpresaList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.DashboardFinanzas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.DashboardLogistica"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.Vender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.IngresoList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.DetalleVenta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.Comprar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.EgresoList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.DetalleCompra"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.crud.VentaEditor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.DashboardDatos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.ProductoList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.ListaProductos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.ListaProductosCompra"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.ProductocompraEditor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cl.webinc.benderand.Productoeditor"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="cl.webinc.benderand.provider.Provider"
+            android:authorities="cl.webinc.benderand.provider.base"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.WRITE_EXTERNAL_STORAGE" >
+        </provider>
+    </application>
+
+</manifest>

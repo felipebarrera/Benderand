@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView android:id="@+id/formaddprod"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" 
+    	android:id="@+id/linearLayout1" 
+    	android:orientation="vertical">
+    	<TextView android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:text="Editor de Producto" 
+    	android:textAppearance="?android:attr/textAppearanceMedium" 
+    	android:id="@+id/textView1"></TextView>
+    	<TableLayout 
+		    android:layout_height="fill_parent" 
+		    android:layout_width="fill_parent"
+		    android:background="#000044">
+        <TableRow> 
+        	<TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Id producto" android:layout_height="wrap_content" 
+		        android:id="@+id/id_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editid_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+
+ 
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Codigo" 
+		        android:layout_height="wrap_content" 
+		        android:id="@+id/cod_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editcod_prod" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	            <requestFocus></requestFocus>
+	        </EditText>
+        </TableRow> 
+        <TableRow>
+            <TextView
+                android:id="@+id/num_serieview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escanear Codigo"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            <Button
+                android:id="@+id/buttonnum_serie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		        android:layout_weight="1" 
+                android:text="Scan" />
+            <Button
+                android:id="@+id/buttonFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		        android:layout_weight="1" 
+                android:text="Foto" />
+         </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/num_serieview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editnum_serie" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Descripcion" android:layout_height="wrap_content" 
+		        android:id="@+id/descrip_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editdescrip_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Categoria" android:layout_height="wrap_content" 
+		        android:id="@+id/id_subcatview" android:layout_width="wrap_content">
+		    </TextView>
+
+	        <Spinner
+	            android:id="@+id/spinnersubcat"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Nombre" android:layout_height="wrap_content" 
+		        android:id="@+id/nom_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editnom_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow>   
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="precio" android:layout_height="wrap_content" 
+		        android:id="@+id/precioview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editprecio" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+       </TableRow>   
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Precio Mayor" android:layout_height="wrap_content" 
+		        android:id="@+id/precioview1" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editpreciomayor" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+       </TableRow>   
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Cant Mayor" android:layout_height="wrap_content" 
+		        android:id="@+id/precioview2" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editcantmayor" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+       </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Marca" android:layout_height="wrap_content" 
+		        android:id="@+id/marca_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editmarca_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Modelo" android:layout_height="wrap_content" 
+		        android:id="@+id/mod_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editmod_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Contenido/u" android:layout_height="wrap_content" 
+		        android:id="@+id/cont_uniview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editcont_uni" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Unidad min" android:layout_height="wrap_content" 
+		        android:id="@+id/uni_minview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/edituni_min" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Contenido/umin" android:layout_height="wrap_content" 
+		        android:id="@+id/cont_uni_medview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editcont_uni_med" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Contenido" android:layout_height="wrap_content" 
+		        android:id="@+id/contenidoview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editcontenido" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Peso neto" android:layout_height="wrap_content" 
+		        android:id="@+id/peso_netoview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editpeso_neto" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Alto cm" android:layout_height="wrap_content" 
+		        android:id="@+id/alto_cmview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editalto_cm" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Ancho cm" android:layout_height="wrap_content" 
+		        android:id="@+id/ancho_cmview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editancho_cm" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Fondo cm" android:layout_height="wrap_content" 
+		        android:id="@+id/fondo_cmview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editfondo_cm" 
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Fabricante" android:layout_height="wrap_content" 
+		        android:id="@+id/fabrview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editfabr" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Familia" android:layout_height="wrap_content" 
+		        android:id="@+id/fam_necview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editfam_nec" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Familia prod" android:layout_height="wrap_content" 
+		        android:id="@+id/fam_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editfam_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+         </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Clase" android:layout_height="wrap_content" 
+		        android:id="@+id/clase_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editclase_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Linea" android:layout_height="wrap_content" 
+		        android:id="@+id/linea_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editlinea_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+       </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Tipo" android:layout_height="wrap_content" 
+		        android:id="@+id/tipo_prodview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/edittipo_prod" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+        </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Imagen" android:layout_height="wrap_content" 
+		        android:id="@+id/imagenview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/editimagen" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+       </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="SKU" android:layout_height="wrap_content" 
+		        android:id="@+id/SKUview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+		        android:id="@+id/editSKU"
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1"
+		        android:inputType="number"
+		        android:layout_width="wrap_content">
+	        </EditText>
+       </TableRow> 
+        <TableRow> 
+	        <TextView 
+	        	android:textAppearance="?android:attr/textAppearanceSmall" 
+		        android:text="Hot" android:layout_height="wrap_content" 
+		        android:id="@+id/hotview" android:layout_width="wrap_content">
+		    </TextView>
+	        <EditText 
+	        	android:layout_height="wrap_content" 
+		        android:layout_weight="1" 
+		        android:id="@+id/edithot" 
+		        android:layout_width="wrap_content">
+	        </EditText>
+       </TableRow> 
+    	</TableLayout>
+    </LinearLayout>
+    </ScrollView>
+<!-- From: file:/D:/Trabajo/android/endroidStudio/proyectos/benderand/res/layout/prodeditor.xml -->

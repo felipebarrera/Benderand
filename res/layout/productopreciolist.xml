@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="middle"
+    android:divider="?android:dividerHorizontal"
+    android:dividerPadding="8dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/twdescripcion"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/abc_action_button_min_height_material"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/twprecio_clp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+</LinearLayout>
