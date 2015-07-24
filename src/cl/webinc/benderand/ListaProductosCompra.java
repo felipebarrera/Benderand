@@ -39,25 +39,17 @@ import cl.webinc.benderand.util.Constantes;
 import cl.webinc.benderand.util.CursortoArrayhash;
 import cl.webinc.benderand.util.ProjectionCreater;
 
-
 public class ListaProductosCompra extends AppCompatActivity {
 	private static final String TAG = "ListaProductosCompra";
 	protected ArrayList<HashMap<String, String>> mylist;
 	private HashMap<String, String> map = new HashMap<String, String>();
-
 	private static AppMy app = AppMy.getinstance();
 	private HashMap<String, String> extra = app.getExtra();
 	private ListView lv;
 	protected int TYPEBTN;
-	protected String SERIAL;
-	protected String FORMAT;
-
-	// Menu item ids
-	public static final int MENU_ITEM_MOD = Menu.FIRST;
 	public static final int MENU_ITEM_DELETE = Menu.FIRST + 1;
 	public static final int MENU_ITEM_INSERT = Menu.FIRST + 2;
 	private EditText inputSearch;
-
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -68,13 +60,11 @@ public class ListaProductosCompra extends AppCompatActivity {
 		lv = (ListView) findViewById(R.id.listaproductos);
 		registerForContextMenu(lv);
 		lv.setOnCreateContextMenuListener(this);
-
 		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
 				final Dialog dialog = new Dialog(ListaProductosCompra.this);
 				dialog.setContentView(R.layout.dialognumberpreciopicker);
 				dialog.setTitle(R.string.lblAgreguedatosdeitem);
-
 				// set the custom dialog components - text, image and button
 				TextView text = (TextView) dialog.findViewById(R.id.text);
 				text.setText(R.string.lblagregueunacantidad);
@@ -82,7 +72,6 @@ public class ListaProductosCompra extends AppCompatActivity {
 				text2.setText(R.string.lblIngresepreciobruto);
 				final EditText mcant = (EditText) dialog.findViewById(R.id.editcant);
 				final EditText mprecio = (EditText) dialog.findViewById(R.id.editprecio);
-
 				Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
 				// if button is clicked, close the custom dialog
 				dialogButton.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +101,6 @@ public class ListaProductosCompra extends AppCompatActivity {
 				dialog.show();
 			}
 		});
-
 		inputSearch = (EditText) findViewById(R.id.etfiltroProductostienda);
 		inputSearch.addTextChangedListener(new TextWatcher() {
 			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -126,8 +114,7 @@ public class ListaProductosCompra extends AppCompatActivity {
 			}
 		});
 		Button btnscan = (Button) findViewById(R.id.btnscan);
-		btnscan.setOnClickListener(new View.OnClickListener()
-		{
+		btnscan.setOnClickListener(new View.OnClickListener(){
 			public void onClick(View v) {
 				TYPEBTN = 0;
 				Log.e("1", "TYPEBTN0 " + TYPEBTN);
@@ -140,36 +127,27 @@ public class ListaProductosCompra extends AppCompatActivity {
 		if (intent.getData() == null) {
 			intent.setData(carro_egresos.CONTENT_URI);
 		}
-
-		// Inform the list we provide context menus for items
-
-
 		new sincTask().execute();
 	}
 	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data)
-	{
+	protected void onActivityResult(int requestCode, int resultCode, Intent data){
 		super.onActivityResult(requestCode, resultCode, data);
-		if(resultCode == RESULT_OK)
-		{
-			if(data != null)
-			{
+		if(resultCode == RESULT_OK){
+			if(data != null){
 				inputSearch.setText(data.getStringExtra("SCAN_RESULT"));
 			}
 		}
-		else
-		{
+		else{
 			new sincTask().execute();
 		}
 	}
 
-	private class addprod extends AsyncTask<String, Void, Boolean>
-	{
+	private class addprod extends AsyncTask<String, Void, Boolean>{
 		private boolean login;
 		private Double cant;
 		ProgressDialog dialog;
 		@Override
-		protected void onPreExecute() {
+		protected void onPreExecute(){
 			dialog = new ProgressDialog(ListaProductosCompra.this);
 			dialog.setTitle(R.string.lblObteniendodatos);
 			dialog.setMessage(ListaProductosCompra.this.getResources().getString(R.string.lblPorfavorespere));
@@ -177,14 +155,13 @@ public class ListaProductosCompra extends AppCompatActivity {
 			dialog.show();
 		}
 		@Override
-		protected void onPostExecute(Boolean result)
-		{
+		protected void onPostExecute(Boolean result){
 			//Toast.makeText(getApplicationContext(), "actualizado", Toast.LENGTH_SHORT).show();
 			dialog.dismiss();
 			finish();
 		}
 		@Override
-		protected Boolean doInBackground(String... params) {
+		protected Boolean doInBackground(String... params){
 			app = AppMy.getinstance();
 			if(!app.isExternal()){
 				Cursor cursor = getContentResolver().query(
@@ -193,8 +170,7 @@ public class ListaProductosCompra extends AppCompatActivity {
 						new String[]{map.get(carro_egresos.producto_id_producto), map.get(carro_egresos.empresa_id_empresa), map.get(carro_egresos.carne_empresa_id_carne_empresa)},
 						carro_egresos.DEFAULT_ORDEN);
 				Log.e("addcarro_compras  ", "busca articulos en carro " + cursor.getCount());
-				if(cursor.getCount() == 0)
-				{
+				if(cursor.getCount() == 0){
 					cant = Double.valueOf(map.get(carro_egresos.cantidad_carro));
 					Log.e("cantidad carro in ", "" + cant);
 					map.put(carro_egresos.precio_carro, map.get(carro_egresos.precio_carro));
@@ -202,8 +178,7 @@ public class ListaProductosCompra extends AppCompatActivity {
 							carro_egresos.CONTENT_URI, PostData.getinstance().postdataready(map, Constantes.CARRO_EGRESOS_TABLE_NAME)).getLastPathSegment());
 					Log.e("Carro insertado", "" + idcarro);
 				}
-				else
-				{
+				else{
 					cursor.moveToFirst();
 					ContentValues values = new ContentValues();
 					cant = Double.valueOf(cursor.getString(cursor.getColumnIndex(carro_egresos.cantidad_carro))) + Double.valueOf(map.get(carro_egresos.cantidad_carro));
@@ -219,22 +194,18 @@ public class ListaProductosCompra extends AppCompatActivity {
 				}
 				cursor.close();
 			}
-			else
-			{
-				if(app.isOnline(ListaProductosCompra.this))
-				{
+			else{
+				if(app.isOnline(ListaProductosCompra.this)){
 					login = WebConector.sendData("http://" + app.getUrl() +"/index.php/androidtienda/savecarrodroid/" , map, "prodcarro");
 				}
-				else
-				{
+				else{
 					Toast.makeText(getApplicationContext(), "No hay conexión a internet", Toast.LENGTH_SHORT).show();
 				}
 			}
 			return login;
 		}
 	}
-	private class sincTask extends AsyncTask<String, Void, ArrayList<HashMap<String, String>>>
-	{
+	private class sincTask extends AsyncTask<String, Void, ArrayList<HashMap<String, String>>>{
 		ProgressDialog dialog;
 		@Override
 		protected void onPreExecute() {
@@ -258,17 +229,14 @@ public class ListaProductosCompra extends AppCompatActivity {
 			dialog.dismiss();
 		}
 		@Override
-		protected ArrayList<HashMap<String, String>> doInBackground(
-				String... params) {
+		protected ArrayList<HashMap<String, String>> doInBackground(String... params) {
 			app = AppMy.getinstance();
 			if(!app.isExternal()){
 				Cursor cursor = getContentResolver().query(Base.productocompra.CONTENT_URI, ProjectionCreater.pcproductocompra, null, null, Base.productocompra.id_producto + " ASC");
 				mylist = CursortoArrayhash.getinstance().ahProductocompra(cursor);
 			}
-			else
-			{
-				if(app.isOnline(ListaProductosCompra.this))
-				{
+			else{
+				if(app.isOnline(ListaProductosCompra.this))	{
 					try {
 						mylist = WebConector.getJSONfromURL("http://"+ app.getUrl() +"/index.php/sincronize/productocompleto/get_Producto/", "productocompleto");
 					} catch (JSONException e) {
@@ -276,8 +244,7 @@ public class ListaProductosCompra extends AppCompatActivity {
 						Log.e("json", " array list" + e);
 					}
 				}
-				else
-				{
+				else{
 					Toast.makeText(getApplicationContext(), "No hay conexión a internet", Toast.LENGTH_SHORT).show();
 				}
 			}
@@ -295,16 +262,13 @@ public class ListaProductosCompra extends AppCompatActivity {
 		intent.addCategory(Intent.CATEGORY_ALTERNATIVE);
 		menu.addIntentOptions(Menu.CATEGORY_ALTERNATIVE, 0, 0,
 				new ComponentName(this, ProductoList.class), null, intent, 0, null);
-
 		return true;
 	}
-
 	@Override
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		super.onPrepareOptionsMenu(menu);
 		return true;
 	}
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -317,7 +281,6 @@ public class ListaProductosCompra extends AppCompatActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View view, ContextMenuInfo menuInfo) {
 		AdapterView.AdapterContextMenuInfo info;
@@ -328,15 +291,11 @@ public class ListaProductosCompra extends AppCompatActivity {
 			Log.e(TAG, "bad menuInfo", e);
 			return;
 		}
-
-
 		// Setup the menu header
 		menu.setHeaderTitle("Opciones");
-
 		// Add a menu item to delete the note
 		menu.add(0, MENU_ITEM_DELETE, 0, R.string.menu_delete);
 	}
-
 	@Override
 	public boolean onContextItemSelected(MenuItem item) {
 		AdapterView.AdapterContextMenuInfo info;

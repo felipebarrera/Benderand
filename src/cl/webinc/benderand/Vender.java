@@ -137,8 +137,6 @@ public class Vender extends AppCompatActivity
 					public void afterTextChanged(Editable s) {
 					}
 				});
-
-				new sincTaskcargaspinners().execute();
 				// if button is clicked, close the custom dialog
 				dialogButton.setOnClickListener(new View.OnClickListener() {
 					public void onClick(View v) {
@@ -152,14 +150,13 @@ public class Vender extends AppCompatActivity
 						dialog.dismiss();
 					}
 				});
+				new sincTaskcargaspinners().execute();
 				dialog.show();
 				Log.e("btnCobrar ", "");
 			}
 		});
 		new sincTask().execute();
 	}
-    
-    
 	@Override
 	public boolean onContextItemSelected(MenuItem item) {
 	    final AdapterView.AdapterContextMenuInfo info;
@@ -179,7 +176,6 @@ public class Vender extends AppCompatActivity
 	    		text.setText(R.string.lblseleccioneunacantidad);
 	    		final EditText mcant = (EditText) dialog.findViewById(R.id.editcant);
 	    		mcant.setText("1");
-	
 	    		Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
 	    		// if button is clicked, close the custom dialog
 	    		dialogButton.setOnClickListener(new View.OnClickListener() { 
@@ -221,14 +217,12 @@ public class Vender extends AppCompatActivity
 	    }
 	    return false;
 	}
-
 	public void onItemClick(int mPosition) {
 		Log.e(TAG,"" + mPosition);
 		Carro_comprascompleto carro = mylist.get(mPosition - 1);
 		Toast.makeText(Vender.this, "ID '" + carro.getId_carro_compras() + "' was clicked.", Toast.LENGTH_SHORT).show();
 		Log.e(TAG, " ");
 	}
-
 	private class sincTaskcargaspinners extends AsyncTask<String, Void, HashMap<String, ArrayList<HashMap<String, String>>>>
 	{
 		ProgressDialog dialog;
@@ -306,6 +300,7 @@ public class Vender extends AppCompatActivity
     	    		setTotal();
     				txtvalortotal.setText(CurrencyFormatter.getFormattedCurrencyStringForLocale(new Locale("es", "CL"), "CLP", Double.valueOf(hash.get("total"))));
     				Log.e(TAG, " result" + result.get(0).getNombre_producto() + " " + result.get(0).getId_carro_compras());
+					btnCobrar.setEnabled(true);
     			}
 				else
 				{

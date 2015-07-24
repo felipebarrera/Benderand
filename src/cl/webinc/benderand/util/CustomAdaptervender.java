@@ -67,6 +67,8 @@ public class CustomAdaptervender extends BaseAdapter implements OnClickListener 
 			holder=(ViewHolder)vi.getTag();}
 		if(data.size()<=0)
 		{
+			holder = new ViewHolder();
+			holder.tdescripcioncarro=(TextView)vi.findViewById(R.id.tdescripcioncarro);
 			holder.tdescripcioncarro.setText(R.string.lblNoExistenItems);
 		}
 		else

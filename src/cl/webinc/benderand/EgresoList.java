@@ -1,14 +1,11 @@
 package cl.webinc.benderand;
 
-import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -43,18 +40,6 @@ public class EgresoList extends AppCompatActivity {
 		registerForContextMenu(lv);
 		lv.setOnCreateContextMenuListener(this);
 		lv.setTextFilterEnabled(true);
-		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				@SuppressWarnings("unchecked")
-                Compracompleta o = (Compracompleta) lv.getItemAtPosition(position);
-				Intent intent = new Intent(EgresoList.this, DetalleCompra.class);
-				intent.putExtra("id", o.getId_factura());
-				extra.put("id", o.getId_factura());
-				app.setExtra(extra);
-				Log.e(TAG, "" + app.getExtra().get("_id"));
-				//startActivityForResult(intent, 1);
-			}
-		});
 		new sincTask().execute();
 	}
     public void onItemClick(int mPosition) {

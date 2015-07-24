@@ -2,4 +2,15 @@
     <style name="AppBaseTheme" parent="Base.Theme.AppCompat.Light">
     </style>
 
+    <style name="btntext">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/button_text</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+        <item name="android:textColor">@color/primary_text_default_material_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

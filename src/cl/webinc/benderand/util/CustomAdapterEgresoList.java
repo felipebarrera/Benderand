@@ -112,9 +112,10 @@ public class CustomAdapterEgresoList extends BaseAdapter implements View.OnClick
         }
         @Override
         public void onClick(View arg0) {
+            Log.e("cadapteringresolist", "=====Row button clicked=====");
             EgresoList sct = (EgresoList)activity;
             if(data.size()<=0){
-                Toast.makeText(activity.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
+                Toast.makeText(sct.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
             }else{
                 sct.onItemClick(mPosition);
             }

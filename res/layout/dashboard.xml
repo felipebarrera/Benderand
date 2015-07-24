@@ -19,8 +19,6 @@
                 android:id="@+id/btnVender"
                 android:text="@string/btnVender"
                 style="@style/btntext"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:layout_marginTop="10dp" />
         </TableRow>
         <TableRow
@@ -58,9 +56,10 @@
 
         <Spinner
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
+            android:layout_height="fill_parent"
             android:id="@+id/spPeriodo"
-            style="@style/Base.TextAppearance.AppCompat.Large"/>
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_weight="1" />
 
     </TableRow>
     <TableRow
@@ -72,7 +71,8 @@
         <com.echo.holographlibrary.BarGraph
             android:layout_width="360dp"
             android:layout_height="200dp"
-            android:id="@+id/graph"/>
+            android:id="@+id/graph"
+            android:layout_weight="1" />
     </TableRow>
     </TableLayout>
 </LinearLayout>

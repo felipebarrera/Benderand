@@ -6,8 +6,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -42,18 +40,6 @@ public class IngresoList extends AppCompatActivity {
 		registerForContextMenu(lv);
 		lv.setOnCreateContextMenuListener(this);
 		lv.setTextFilterEnabled(true);
-		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-				@SuppressWarnings("unchecked")
-				Ventacompleta o = (Ventacompleta) lv.getItemAtPosition(position);
-				Intent intent = new Intent(IngresoList.this, DetalleVenta.class);
-				intent.putExtra("id", o.getId_venta());
-				extra.put("id", o.getId_venta());
-				app.setExtra(extra);
-				Log.e(TAG, "" + app.getExtra().get("_id"));
-				startActivityForResult(intent, 1);
-			}
-		});
 		new sincTask().execute();
 	}
 	public void onItemClick(int mPosition) {

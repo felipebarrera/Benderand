@@ -110,7 +110,7 @@ public class CustomAdapterDetalleCompra extends BaseAdapter implements OnClickLi
         public void onClick(View arg0) {
             Comprar sct = (Comprar)activity;
             if(data.size()<=0){
-                Toast.makeText(activity.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
+                Toast.makeText(sct.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
             }else{
                 sct.onItemClick(mPosition);
             }

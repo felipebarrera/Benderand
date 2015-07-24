@@ -89,12 +89,8 @@
         <Button
             android:id="@+id/btnlogin"
             android:text="@string/lblEntrar"
-            style="@style/btntext"
-            android:layout_width="wrap_content"
             android:layout_marginBottom="100dp"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="@color/primary_text_default_material_dark"
-            android:textStyle="bold" />
+            style="@style/btntext"/>
 
     </TableRow>
 
@@ -105,11 +101,7 @@
         <Button
             android:id="@+id/btnregistro"
             android:text="@string/lblnotengocuenta"
-            style="@style/btntext"
-            android:layout_width="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textStyle="bold"
-            android:textColor="@color/primary_text_default_material_dark" />
+            style="@style/btntext" />
     </TableRow>
 
 </TableLayout>

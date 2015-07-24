@@ -44,9 +44,7 @@ public class CustomAdapterIngresoList extends BaseAdapter implements View.OnClic
         return data.size();
     }
     public Object getItem(int position) {
-        if(data.size()>0) {
-            return data.get(position);
-        }
+        return data.get(position);
     }
     public long getItemId(int position) {
         return position;
@@ -87,9 +85,7 @@ public class CustomAdapterIngresoList extends BaseAdapter implements View.OnClic
             /***** Get each Model object from Arraylist ********/
             tempValues=null;
             tempValues = (Ventacompleta) data.get( position );
-
             /************  Set Model values in Holder elements ***********/
-
             Calendar rightNow = Calendar.getInstance(new Locale("es", "CL"));
             rightNow.setTimeInMillis(Long.valueOf(tempValues.getHora_fecha_venta()));
             holder.fecha.setText( rightNow.get(Calendar.DAY_OF_MONTH) + "/" + rightNow.get(Calendar.MONTH) + "/" + rightNow.get(Calendar.YEAR) + " " + rightNow.get(Calendar.HOUR) + ":"
@@ -98,9 +94,7 @@ public class CustomAdapterIngresoList extends BaseAdapter implements View.OnClic
             holder.tpago.setText( tempValues.getNombre_tipo_pago() );
             holder.narticulos.setText( "N° Articulos " + tempValues.getNumero_articulos());
             holder.total.setText( "Total Venta " + CurrencyFormatter.getFormattedCurrencyStringForLocale(new Locale("es", "CL"), "CLP", Double.valueOf(tempValues.getTotal())) );
-
             /******** Set Item Click Listner for LayoutInflater for each row *******/
-
             vi.setOnClickListener(new OnItemClickListener(position));
         }
         return vi;
@@ -117,9 +111,10 @@ public class CustomAdapterIngresoList extends BaseAdapter implements View.OnClic
         }
         @Override
         public void onClick(View arg0) {
+            Log.e("cadapteringresolist", "=====Row button clicked=====");
             IngresoList sct = (IngresoList)activity;
             if(data.size()<=0){
-                Toast.makeText(activity.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
+                Toast.makeText(sct.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
             }else{
                 sct.onItemClick(mPosition);
             }

@@ -42,14 +42,12 @@ public class Login extends Activity
         Log.e("ONCREATE", "crea layout login ");
         setContentView(R.layout.main);
 		app.setExternal(false);
-		btnLogin = (Button) findViewById(R.id.btnlogin);
-		Button btnregistro = (Button) findViewById(R.id.btnlogin);
         usuario = (EditText) findViewById(R.id.usuario);
         password = (EditText) findViewById(R.id.password);
         usuario.setText("pop");
         password.setText("pop");
 		btnLogin = (Button) findViewById(R.id.btnlogin);
-		btnregistro = (Button) findViewById(R.id.btnregistro);
+        Button btnregistro = (Button) findViewById(R.id.btnregistro);
         /*//BORRAR
         Intent i = new Intent(Login.this, Dashboard.class);
 		Log.e("ONCREATE if(app.getUser() != null) ", " abre dashboard");

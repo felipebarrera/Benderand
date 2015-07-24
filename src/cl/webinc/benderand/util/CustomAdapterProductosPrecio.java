@@ -99,7 +99,7 @@ public class CustomAdapterProductosPrecio extends BaseAdapter implements View.On
         public void onClick(View arg0) {
             ProductoList sct = (ProductoList)activity;
             if(data.size()<=0){
-                Toast.makeText(activity.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
+                Toast.makeText(sct.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
             }else{
                 sct.onItemClick(mPosition);
             }

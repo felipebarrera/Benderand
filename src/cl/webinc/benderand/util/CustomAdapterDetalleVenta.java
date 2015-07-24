@@ -14,7 +14,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import cl.webinc.benderand.Comprar;
 import cl.webinc.benderand.R;
 import cl.webinc.benderand.Vender;
 import cl.webinc.benderand.entidad.Carro_ventacompleto;
@@ -111,7 +110,7 @@ public class CustomAdapterDetalleVenta extends BaseAdapter implements OnClickLis
         public void onClick(View arg0) {
             Vender sct = (Vender)activity;
             if(data.size()<=0){
-                Toast.makeText(activity.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
+                Toast.makeText(sct.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
             }else{
                 sct.onItemClick(mPosition);
             }

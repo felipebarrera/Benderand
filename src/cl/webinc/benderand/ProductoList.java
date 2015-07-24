@@ -1,11 +1,11 @@
 package cl.webinc.benderand;
 
-import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -13,7 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -26,7 +25,7 @@ import cl.webinc.benderand.util.CursortoArrayEntidad;
 import cl.webinc.benderand.util.CustomAdapterProductosPrecio;
 import cl.webinc.benderand.util.ProjectionCreater;
 
-public class ProductoList extends ListActivity {
+public class ProductoList extends AppCompatActivity {
     private static final String TAG = "productolist";
     // Menu item ids
     public static final int MENU_ITEM_DELETE = Menu.FIRST;
@@ -39,26 +38,12 @@ public class ProductoList extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setDefaultKeyMode(DEFAULT_KEYS_SHORTCUT);
-        registerForContextMenu(getListView());
+        setContentView(R.layout.listatienda);
         setTitle(R.string.stringproductos);
-        new sincTask().execute();
-		Log.e("Productolist", "onResume");
-        lv = getListView();
-        Log.e("ListView", " return");
+        lv = (ListView) findViewById(R.id.listaproductos);
+        lv.setOnCreateContextMenuListener(this);
         lv.setTextFilterEnabled(true);
-        lv.setOnItemClickListener(new OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                @SuppressWarnings("unchecked")
-                Productoprecio o = (Productoprecio) lv.getItemAtPosition(position);
-                Toast.makeText(ProductoList.this, "ID '" + o.getId_producto() + "' was clicked.", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ProductoList.this, Productoeditor.class);
-                intent.putExtra("id", o.getId_producto());
-                extra.put("id", o.getId_producto());
-                app.setExtra(extra);
-                Log.e(TAG, "" + app.getExtra().get("_id"));
-                startActivityForResult(intent, 1);
-            }
-        });
+        new sincTask().execute();
     }
     public void onItemClick(int mPosition) {
         Log.e(TAG,"" + mPosition);
@@ -86,7 +71,7 @@ public class ProductoList extends ListActivity {
     	@Override
     	 protected void onPostExecute(ArrayList<Productoprecio> result) {
     		if(result != null) {
-                setListAdapter(new CustomAdapterProductosPrecio(ProductoList.this, result));
+                lv.setAdapter(new CustomAdapterProductosPrecio(ProductoList.this, result));
     	        }else {
                     Toast.makeText(getApplicationContext(), "Fallo la sincronizacion", Toast.LENGTH_SHORT).show();
     	            Log.e("sinctask productolista", " Fallo la sincronizacion");

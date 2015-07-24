@@ -15,10 +15,8 @@ import java.util.Calendar;
 import java.util.Locale;
 
 import cl.webinc.benderand.Bodega;
-import cl.webinc.benderand.EgresoList;
 import cl.webinc.benderand.R;
 import cl.webinc.benderand.entidad.Stockcompleto;
-import cl.webinc.benderand.provider.Base;
 
 /**
  * Created by FelipeBarrera on 06-07-2015. custom adapeter egresolist
@@ -108,7 +106,7 @@ public class CustomAdapterBodega extends BaseAdapter implements View.OnClickList
         public void onClick(View arg0) {
             Bodega sct = (Bodega)activity;
             if(data.size()<=0){
-                Toast.makeText(activity.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
+                Toast.makeText(sct.getBaseContext(), R.string.lblNoExistenItems, Toast.LENGTH_LONG).show();
             }else{
                 sct.onItemClick(mPosition);
             }

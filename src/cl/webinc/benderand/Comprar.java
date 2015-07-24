@@ -1,6 +1,5 @@
 package cl.webinc.benderand;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -77,7 +76,6 @@ public class Comprar extends AppCompatActivity
 	protected void onResume() {
 		super.onResume();
 		Log.e(TAG, "onResume");
-
 		Button btnAgregar = (Button) findViewById(R.id.btncAgregar);
 		btnAgregar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -121,8 +119,6 @@ public class Comprar extends AppCompatActivity
 				final EditText etanombreproveedor = (EditText) dialog.findViewById(R.id.etanombreproveedor);
 				final EditText etatelefonoproveedor = (EditText) dialog.findViewById(R.id.etatelefonoproveedor);
 				final DatePicker fechafactura = (DatePicker) dialog.findViewById(R.id.datePicker2);
-
-				new sincTaskcargaspinners().execute();
 				dialogButton.setOnClickListener(new View.OnClickListener() {
 					public void onClick(View v) {
 						if (etarutproveedor.getText().toString().isEmpty()) {
@@ -148,10 +144,10 @@ public class Comprar extends AppCompatActivity
 						}
 					}
 				});
+				new sincTaskcargaspinners().execute();
 				dialog.show();
 			}
 		});
-
 		new sincTask().execute();
 	}
 
@@ -302,6 +298,7 @@ public class Comprar extends AppCompatActivity
 					txtcimpuesto.setText(CurrencyFormatter.getFormattedCurrencyStringForLocale(new Locale("es", "CL"), "CLP", Double.valueOf(hash.get("impuesto"))));
 					txtcbruto.setText(CurrencyFormatter.getFormattedCurrencyStringForLocale(new Locale("es", "CL"), "CLP", Double.valueOf(hash.get("bruto"))));
 					Log.e(TAG, " result" + result.get(0).getNombre_producto() + " " + result.get(0).getId_carro_egresos());
+					btnPagar.setEnabled(true);
 				}
                 else
                 {
